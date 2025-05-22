@@ -88,8 +88,13 @@ async function fetchUserWeatherInfo(coordinates) {
     }
     catch(err) {
         loadingScreen.classList.remove("active");
+<<<<<<< Updated upstream
         console.log("Error during API call");
         window.alert("Wrong Name Input");
+=======
+        console.log(err);
+
+>>>>>>> Stashed changes
     }
 
 }
@@ -124,7 +129,12 @@ function getLocation() {
         navigator.geolocation.getCurrentPosition(showPosition);
     }
     else {
+<<<<<<< Updated upstream
         window.alert("No Geolocation Support Available ");
+=======
+        window.alert("Error getting location")
+    
+>>>>>>> Stashed changes
     }
 }
 
