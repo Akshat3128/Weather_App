@@ -82,6 +82,7 @@ async function fetchUserWeatherInfo(coordinates) {
     catch(err) {
         loadingScreen.classList.remove("active");
         console.log("Error during API call");
+        window.alert("Wrong Name Input");
     }
 
 }
